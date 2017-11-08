@@ -36,7 +36,8 @@ class Phone(object):
     def __init__(self, dat_file=None):
 
         if dat_file is None:
-            dat_file = os.path.join(os.path.dirname(__file__), "phone.dat")
+            path = os.getenv("HOME")
+            dat_file = os.path.join(path + "/.phone/", "phone.dat")
 
         with open(dat_file, 'rb') as f:
             self.buf = f.read()
