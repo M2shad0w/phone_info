@@ -7,7 +7,11 @@ case $ANS in
 y|Y|yes|Yes) 
     echo "please input suder's passwd "
     read passwd
-    echo $passwd |sudo mkdir -p $HOME/.phone |sudo -S mv ./phone_script /usr/local/bin/phone |sudo -S mv p_data $HOME/.phone/phone.dat |sudo -S chmod +x /usr/local/bin/phone
+    echo $passwd
+    sudo mkdir -p $HOME/.phone 
+    sudo -S mv ./phone_script /usr/local/bin/phone 
+    sudo -S mv p_data $HOME/.phone/phone.dat 
+    sudo -S chmod +x /usr/local/bin/phone
     echo "enjoy it ~~ !"
         ;;
 n|N|no|No) 

@@ -4,8 +4,8 @@ get phone_info command-line-tool
 # install
 
 ```
-wget https://raw.githubusercontent.com/m2shad0w/phone_info/master/install.sh
-sh install.sh
+wget https://raw.githubusercontent.com/m2shad0w/phone_info/master/install.sh 
+./install.sh
 ```
 # 参考
 
